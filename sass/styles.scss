@@ -1,0 +1,199 @@
+@import "config";
+body {
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    border-bottom: 1px solid gray;
+
+    ul {
+        list-style: none;
+        a {
+            text-decoration: none;
+        }
+    }
+    .mainmenu {
+        display: flex;
+        justify-content:space-between;
+        width: 570px;
+        align-items: center;
+        .menuitem {
+         color: black;
+         border-right: solid black 2px;
+         padding-right: 10px;
+        
+         
+         &:hover {
+             @include navhoverstyle
+         }
+
+        }
+
+        #invitation {
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+            margin-right: 40px;
+            border:none
+        }
+
+    }
+    .sign {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 150px;
+        margin-right: 20px;
+
+        
+        .login {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            &:hover {
+                @include navhoverstyle
+            }    
+
+        }
+        .signup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: black;
+            width: 70px;
+            height: 30px;
+            font-weight: bold;
+            border-radius: 10px;
+
+            &:hover {
+                @include navhoverstyle;
+                color: white;
+            
+            }
+        }
+    }
+}
+
+.topcontent {
+    padding-top: 50px;
+    background-color: black;
+    display: flex;
+    height: 450px;
+    .topcon1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    h1 {
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    p {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    input {
+        width: 150px;
+        height: 20px;
+        border-radius: 5px;
+
+    }
+    button {
+      @include buttonstyle
+    }
+    img {
+        height: 500px;
+    }
+    .btninp {
+        display: flex;
+        justify-content: space-around;
+        width: 350px;
+        align-items: center;
+    }
+}
+
+.companies {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    width: 100%;
+
+    img {
+        width: 150px;
+    }
+}
+
+.middlecontent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+        width: 350px;
+    }
+
+    .midtexts {
+        width: 600px;
+
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 40px;
+            padding-bottom: 30px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 15px;
+        }
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include buttonstyle
+        }
+    }
+}
+ .bottomcontent {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-top: 50px;
+     background-color: black;
+     margin-top: 20px;
+     height: 400px;
+
+     h2 {
+         color: white;
+         font-size: 35px
+     }
+     p {
+         @extend h2;
+         font-size: 25px;
+     }
+     button {
+         @include buttonstyle;
+         width: 220px;
+         margin-left: 10px;
+         
+     }
+ }

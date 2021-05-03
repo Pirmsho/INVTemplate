@@ -1,0 +1,23 @@
+@mixin navhoverstyle {
+    color: rgb(122, 103, 103);
+             transform: scale(1.2);
+             transition-duration: 0.3s;
+             font-weight: bold;
+}
+
+@mixin buttonstyle {
+    width: 150px;
+    background: linear-gradient(#FB7B30,#A831A5);
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    &:hover {
+        background: linear-gradient(#A831A5,#FB7B30);
+        transform: scale(1.1);
+        
+        
+    }
+}
