@@ -1,8 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Pangolin&display=swap");
 body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
+}
+
+body p {
+  font-family: 'Pangolin', cursive;
+}
+
+body h1, body h2, body .bottomcontent p, .bottomcontent body p {
+  font-family: 'Oswald', sans-serif;
 }
 
 nav {
@@ -95,6 +105,8 @@ nav .sign .login:hover {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   font-weight: bold;
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
 }
 
 nav .sign .signup {
@@ -148,12 +160,14 @@ nav .sign .signup:hover {
 }
 
 .topcontent h1 {
+  margin-left: 20px;
   color: white;
   font-size: 50px;
   font-weight: bold;
 }
 
 .topcontent p {
+  margin-left: 20px;
   color: white;
   font-size: 20px;
   font-weight: bold;
@@ -301,15 +315,18 @@ nav .sign .signup:hover {
 }
 
 .bottomcontent h2, .bottomcontent p {
+  margin-left: 20px;
   color: white;
   font-size: 35px;
 }
 
 .bottomcontent p {
+  margin-left: 20px;
   font-size: 25px;
 }
 
 .bottomcontent button {
+  margin-left: 20px;
   width: 150px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FB7B30), to(#A831A5));
   background: linear-gradient(#FB7B30, #A831A5);
@@ -321,7 +338,6 @@ nav .sign .signup:hover {
           transition-duration: 0.2s;
   cursor: pointer;
   width: 220px;
-  margin-left: 10px;
 }
 
 .bottomcontent button:hover {
@@ -329,5 +345,72 @@ nav .sign .signup:hover {
   background: linear-gradient(#A831A5, #FB7B30);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  background-color: black;
+  height: 300px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer .foottext {
+  margin-top: 30px;
+  width: 700px;
+  margin-right: 60px;
+}
+
+footer .foottext p {
+  margin-left: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+footer .foottext i {
+  margin-left: 20px;
+  width: 50px;
+  height: 40px;
+}
+
+footer .navfooter {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .navfootcontent {
+  margin-top: 30px;
+}
+
+footer .navfootcontent h2, footer .navfootcontent .bottomcontent p, .bottomcontent footer .navfootcontent p, footer .navfootcontent p {
+  color: white;
+}
+
+footer .navfootcontent h2:hover, footer .navfootcontent .bottomcontent p:hover, .bottomcontent footer .navfootcontent p:hover, footer .navfootcontent p:hover {
+  color: #7a6767;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  font-weight: bold;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+footer .navfootcontent h2, footer .navfootcontent .bottomcontent p, .bottomcontent footer .navfootcontent p {
+  font-size: 20px;
+}
+
+footer .navfootcontent p {
+  font-size: 15px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,8 +1,16 @@
 @import "config";
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Pangolin&display=swap');
 body {
     margin:0;
     box-sizing: border-box;
     padding: 0;
+    p{ 
+        font-family:  'Pangolin', cursive;
+    }
+    h1,h2 {
+        font-family: 'Oswald', sans-serif;;
+    }
 }
 
 nav {
@@ -62,7 +70,9 @@ nav {
             font-weight: bold;
             color: black;
             &:hover {
-                @include navhoverstyle
+                @include navhoverstyle ;
+                border-left: 2px solid gray;
+                border-right: 2px solid gray;
             }    
 
         }
@@ -80,6 +90,7 @@ nav {
             &:hover {
                 @include navhoverstyle;
                 color: white;
+                
             
             }
         }
@@ -98,11 +109,13 @@ nav {
     }
     
     h1 {
+        margin-left: 20px;
         color: white;
         font-size: 50px;
         font-weight: bold;
     }
     p {
+        margin-left: 20px;
         color: white;
         font-size: 20px;
         font-weight: bold;
@@ -183,17 +196,76 @@ nav {
      height: 400px;
 
      h2 {
+        margin-left: 20px;
          color: white;
          font-size: 35px
      }
      p {
+        margin-left: 20px;
          @extend h2;
          font-size: 25px;
      }
      button {
+        margin-left: 20px;
          @include buttonstyle;
          width: 220px;
-         margin-left: 10px;
+         
          
      }
  }
+
+footer {
+    display: flex;
+    margin-top: 50px;
+    background-color: black;
+    height: 300px;
+    a {
+        text-decoration: none;
+    }
+
+    .foottext {
+        margin-top: 30px;
+        width: 700px;
+        margin-right: 60px;
+
+      p {
+        margin-left: 20px;
+          color: white;
+          font-size: 20px;
+      }
+    
+      i {
+        margin-left: 20px;
+          width: 50px;
+          height: 40px;
+      }
+    }
+
+
+
+
+
+    .navfooter {
+        width: 700px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .navfootcontent {
+        margin-top: 30px;
+
+        h2,p {
+            color: white;
+            &:hover { @include navhoverstyle;
+                border-top: 1px solid gray;
+                border-bottom: 1px solid gray;
+
+            }
+        }
+        h2 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
