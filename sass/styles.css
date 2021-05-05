@@ -65,6 +65,7 @@ body h1, body h2, body .bottomcontent p, .bottomcontent body p, body label {
 
 nav {
   position: fixed;
+  z-index: 2;
   left: 0;
   top: 0;
   display: -webkit-box;

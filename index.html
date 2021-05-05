@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invitation</title>
-    <link rel="stylesheet" href="sass/styles.css" />
+    <link rel="stylesheet" href="sass/styles.css" >
+     <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script
       src="https://kit.fontawesome.com/d9468b524b.js"
       crossorigin="anonymous"
     ></script>
+    
+   
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <nav class="navbar ">
         <ul class="mainmenu">
           <a href="index.html"><li id="invitation" class="menuitem">Invitation</li></a>
           <a href="#"><li class="menuitem">Features</li></a>
           <a href="#"><li class="menuitem">Extension</li></a>
-          <a href="#"
-            ><li class="menuitem">
-              Referral Programs <i class="fas fa-angle-down"></i></li
-          ></a>
+          <a href="#"><li class="menuitem" id="ref">Referral Programs <i class="fas fa-angle-down"></i></li></a>
+           
           <a href="#"
             ><li class="menuitem">People <i class="fas fa-angle-down"></i></li
           ></a>
@@ -33,7 +35,7 @@
       </nav>
     </header>
     <div class="topcontent">
-      <div class="topcon1">
+      <div class="topcon1  animate__animated animate__fadeInLeft">
         <h1>The Referral Community</h1>
         <p>
           Invitation is the new social network where everyone gets rewarded.
@@ -51,7 +53,7 @@
         <button type="button" class="btn">Get started-It's Free!</button>
             </div>
       </div>
-        <img src="images/hero-image.png" />
+        <img class="animate__animated animate__fadeInRight" src="images/hero-image.png" />
       </div>
     </div>
     <div class="companies">
@@ -63,7 +65,7 @@
       <img src="images/company-6.png" />
     </div>
     <div class="middlecontent">
-      <img src="images/left-illustration.png" />
+      <img  src="images/left-illustration.png" />
       <div class="midtexts">
         <h2>Get Cash Rewards</h2>
         <h3><i class="far fa-check-circle"></i> Post</h3>
@@ -97,7 +99,7 @@
         <button type="button">Explore Features</button>
         </div>
       </div>
-      <img src="images/signup-image.png" alt="signup" />
+      <img class="signimage" src="images/signup-image.png" alt="signup" />
     </div>
     <footer>
       <div class="foottext">
@@ -137,5 +139,6 @@
         </div>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
